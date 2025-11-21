@@ -1,0 +1,18 @@
+spring:
+  config:
+    activate:
+      on-profile: jpa
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/contactdb?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # creates/updates table automatically
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

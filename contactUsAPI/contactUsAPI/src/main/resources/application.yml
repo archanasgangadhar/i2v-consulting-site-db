@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: contactusapi
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: i2v.consulting.helpdesk@gmail.com
+    password: vqjqsblgpxinmyoh
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+# HR Email ? must be set (can also be set via environment variable)
+mail:
+  hr:
+    to: raki82932@gmail.com
+
+# IP Geolocation settings (you can change the API provider)
+ipgeo:
+  api:
+    url: https://ipinfo.io
+    key: ff45207c13779e  # keep empty if you do not want to use IP lookup
